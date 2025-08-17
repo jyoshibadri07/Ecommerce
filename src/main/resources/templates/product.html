@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	th:replace="~{base::layout(~{::section})}">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<section>
+	
+		<div class="container-fluid bg-primary p-5 mt-5 ">
+			<div class="row">
+				<div class="col-md-8 offset-md-2">
+					<form>
+						<div class="input-group">
+							<input type="text" class="form-control" name="ch">
+							<button class="btn btn-light text-dark ms-3 col-md-2">
+								<i class="fa-solid fa-magnifying-glass"></i> Search
+							</button>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+
+		<div class="container-fluid mt-1">
+			 <div class="row"> 
+				
+				<div class="col-md-2 p-0"> 
+					
+					<div class ="card shadow-sm p-0 mb-5 bg-body-tertiary rounded">
+					<div class ="card-body">
+					<div class="list-group"> 
+						<a href="#" class="list-group-item List-group-item-action active" aria-current="true">
+							 Categories 
+					    </a> 
+					   <a href="#" class="list-group-item List-group-item-action">Electronics</a> 
+					   <a href="#" class="list-group-item List-group-item-action">Clothes</a>
+					   <a href="#" class="list-group-item List-group-item-action">Shoes</a>
+					   <a href="#" class="list-group-item List-group-item-action">Grocery</a>
+
+					   </div> 
+				   </div>
+				   </div>
+	     	   </div>
+
+		      <div class="col-md-10">
+				<div class="card">
+				<div class="card-body">
+				<p class="fs-3 text-center">Products</p>
+				<div class="row">
+				<div class="col-md-3">
+				<div class="card">
+				<div class="card-body">
+				<img alt="" src="/img/product_img/laptop.jpg" width="100%"
+				height="150px">
+				<p class="fs-5 text-center">Laptop</p>
+				<div class="row text-center">
+				<p class="fs-6 fw-bold">
+				&#8377; 60000 <span class="fs-6 text-success">20% off
+				</span>
+				</p>
+		<!--	<a th:href="@{'/product/' + ${product.id}}" class="btn btn-primary">
+			    View Details
+			</a> -->
+		 <a href= {/view_product/${id}} class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+		<!--	<a th:href="@{/view_product/{id}(id=${product.id})}" class="btn btn-primary">
+			    View Details
+			</a>  -->
+			<!--<a th:href="@{/view_product/{id}(id=${id})}" class="btn btn-primary col-md-6 offset-md-3">
+			    View Details
+			</a>-->
+			
+
+
+
+
+				</div>
+				</div>
+				</div>
+				</div>  
+			  
+			<!--another-->
+			<div class="col-md-3">
+							<div class="card">
+							<div class="card-body">
+							<img alt="" src="/img/product_img/blue_shirt.jpg" width="100%"
+							height="150px">
+							<p class="fs-5 text-center">Blue Shirt</p>
+							<div class="row text-center">
+							<p class="fs-6 fw-bold">
+							&#8377; 700 <span class="fs-6 text-success">20% off
+							</span>
+							</p>
+							<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+							</div>
+							</div>
+							</div>
+							</div>  		
+			<!--another-->	    
+			<div class="col-md-3">
+							<div class="card">
+							<div class="card-body">
+							<img alt="" src="/img/product_img/canvas.jpg" width="100%"
+							height="150px">
+							<p class="fs-5 text-center">Canvas</p>
+							<div class="row text-center">
+							<p class="fs-6 fw-bold">
+							&#8377; 1000 <span class="fs-6 text-success">20% off
+							</span>
+							</p>
+							<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+							</div>
+							</div>
+							</div>
+							</div>  
+							
+							<!--another-->	    
+										<div class="col-md-3">
+														<div class="card">
+														<div class="card-body">
+														<img alt="" src="/img/product_img/cross.jpg" width="100%"
+														height="150px">
+														<p class="fs-5 text-center">Crocs</p>
+														<div class="row text-center">
+														<p class="fs-6 fw-bold">
+														&#8377; 1500 <span class="fs-6 text-success">20% off
+														</span>
+														</p>
+														<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+														</div>
+														</div>
+														</div>
+														</div>  
+														<!--another-->	    
+																	<div class="col-md-3">
+																					<div class="card">
+																					<div class="card-body">
+																					<img alt="" src="/img/product_img/fridge.png" width="100%"
+																					height="150px">
+																					<p class="fs-5 text-center">Fridge</p>
+																					<div class="row text-center">
+																					<p class="fs-6 fw-bold">
+																					&#8377; 10000<span class="fs-6 text-success">20% off
+																					</span>
+																					</p>
+																					<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																					</div>
+																					</div>
+																					</div>
+																					</div>  
+																					<!--another-->	    
+																								<div class="col-md-3">
+																												<div class="card">
+																												<div class="card-body">
+																												<img alt="" src="/img/product_img/grinder.jpg" width="100%"
+																												height="150px">
+																												<p class="fs-5 text-center">Grinder</p>
+																												<div class="row text-center">
+																												<p class="fs-6 fw-bold">
+																												&#8377; 5000 <span class="fs-6 text-success">20% off
+																												</span>
+																												</p>
+																												<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																												</div>
+																												</div>
+																												</div>
+																												</div>  
+																												<!--another-->	    
+																															<div class="col-md-3">
+																																			<div class="card">
+																																			<div class="card-body">
+																																			<img alt="" src="/img/product_img/hp_laptop.jpg" width="100%"
+																																			height="150px">
+																																			<p class="fs-5 text-center">HP Laptop</p>
+																																			<div class="row text-center">
+																																			<p class="fs-6 fw-bold">
+																																			&#8377; 50000<span class="fs-6 text-success">20% off
+																																			</span>
+																																			</p>
+																																			<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																			</div>
+																																			</div>
+																																			</div>
+																																			</div>  
+																																			<!--another-->	    
+																																						<div class="col-md-3">
+																																										<div class="card">
+																																										<div class="card-body">
+																																										<img alt="" src="/img/product_img/iphone_14.jpg" width="100%"
+																																										height="150px">
+																																										<p class="fs-5 text-center">iphone</p>
+																																										<div class="row text-center">
+																																										<p class="fs-6 fw-bold">
+																																										&#8377; 100000<span class="fs-6 text-success">20% off
+																																										</span>
+																																										</p>
+																																										<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																										</div>
+																																										</div>
+																																										</div>
+																																										</div>  
+																																										<!--another-->	    
+																																													<div class="col-md-3">
+																																																	<div class="card">
+																																																	<div class="card-body">
+																																																	<img alt="" src="/img/product_img/jeans_blue.jpg" width="100%"
+																																																	height="150px">
+																																																	<p class="fs-5 text-center">Jeans</p>
+																																																	<div class="row text-center">
+																																																	<p class="fs-6 fw-bold">
+																																																	&#8377; 1000 <span class="fs-6 text-success">20% off
+																																																	</span>
+																																																	</p>
+																																																	<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																	</div>
+																																																	</div>
+																																																	</div>
+																																																	</div>  
+																																																	<!--another-->	    
+																																																				<div class="col-md-3">
+																																																								<div class="card">
+																																																								<div class="card-body">
+																																																								<img alt="" src="/img/product_img/kruti.jpg" width="100%"
+																																																								height="150px">
+																																																								<p class="fs-5 text-center">Kurti</p>
+																																																								<div class="row text-center">
+																																																								<p class="fs-6 fw-bold">
+																																																								&#8377; 2000 <span class="fs-6 text-success">20% off
+																																																								</span>
+																																																								</p>
+																																																								<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																								</div>
+																																																								</div>
+																																																								</div>
+																																																								</div>  
+																																																								
+																																																								<!--another-->	    
+																																																											<div class="col-md-3">
+																																																															<div class="card">
+																																																															<div class="card-body">
+																																																															<img alt="" src="/img/product_img/lehenga.jpg" width="100%"
+																																																															height="150px">
+																																																															<p class="fs-5 text-center">Lehenga</p>
+																																																															<div class="row text-center">
+																																																															<p class="fs-6 fw-bold">
+																																																															&#8377; 800 <span class="fs-6 text-success">20% off
+																																																															</span>
+																																																															</p>
+																																																															<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																															</div>
+																																																															</div>
+																																																															</div>
+																																																															</div>  
+																																																															<!--another-->	    
+																																																																		<div class="col-md-3">
+																																																																						<div class="card">
+																																																																						<div class="card-body">
+																																																																						<img alt="" src="/img/product_img/lofer.jpg" width="100%"
+																																																																						height="150px">
+																																																																						<p class="fs-5 text-center">Lofer</p>
+																																																																						<div class="row text-center">
+																																																																						<p class="fs-6 fw-bold">
+																																																																						&#8377; 2000 <span class="fs-6 text-success">20% off
+																																																																						</span>
+																																																																						</p>
+																																																																						<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																																						</div>
+																																																																						</div>
+																																																																						</div>
+																																																																						</div>  
+																																																																						<!--another-->	    
+																																																																									<div class="col-md-3">
+																																																																													<div class="card">
+																																																																													<div class="card-body">
+																																																																													<img alt="" src="/img/product_img/mobile.jpg" width="100%"
+																																																																													height="150px">
+																																																																													<p class="fs-5 text-center">Mobile</p>
+																																																																													<div class="row text-center">
+																																																																													<p class="fs-6 fw-bold">
+																																																																													&#8377; 11000 <span class="fs-6 text-success">20% off
+																																																																													</span>
+																																																																													</p>
+																																																																													<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																																													</div>
+																																																																													</div>
+																																																																													</div>
+																																																																													</div>  
+																																																																													<!--another-->	    
+																																																																																<div class="col-md-3">
+																																																																																				<div class="card">
+																																																																																				<div class="card-body">
+																																																																																				<img alt="" src="/img/product_img/canvas.jpg" width="100%"
+																																																																																				height="150px">
+																																																																																				<p class="fs-5 text-center">Canvas</p>
+																																																																																				<div class="row text-center">
+																																																																																				<p class="fs-6 fw-bold">
+																																																																																				&#8377; 1000 <span class="fs-6 text-success">20% off
+																																																																																				</span>
+																																																																																				</p>
+																																																																																				<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																																																				</div>
+																																																																																				</div>
+																																																																																				</div>
+																																																																																				</div>  
+																																																																																				<!--another-->	    
+																																																																																							<div class="col-md-3">
+																																																																																											<div class="card">
+																																																																																											<div class="card-body">
+																																																																																											<img alt="" src="/img/product_img/monitor.jpg" width="100%"
+																																																																																											height="150px">
+																																																																																											<p class="fs-5 text-center">Monitor</p>
+																																																																																											<div class="row text-center">
+																																																																																											<p class="fs-6 fw-bold">
+																																																																																											&#8377; 20000 <span class="fs-6 text-success">20% off
+																																																																																											</span>
+																																																																																											</p>
+																																																																																											<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																																																											</div>
+																																																																																											</div>
+																																																																																											</div>
+																																																																																											</div>  
+																																																																																											
+																																																																																											<!--another-->	    
+																																																																																														<div class="col-md-3">
+																																																																																																		<div class="card">
+																																																																																																		<div class="card-body">
+																																																																																																		<img alt="" src="/img/product_img/official_shoe.jpg" width="100%"
+																																																																																																		height="150px">
+																																																																																																		<p class="fs-5 text-center">Shoe</p>
+																																																																																																		<div class="row text-center">
+																																																																																																		<p class="fs-6 fw-bold">
+																																																																																																		&#8377; 2500<span class="fs-6 text-success">20% off
+																																																																																																		</span>
+																																																																																																		</p>
+																																																																																																		<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																																																																		</div>
+																																																																																																		</div>
+																																																																																																		</div>
+																																																																																																		</div>  
+																																																																																																		<!--another-->	    
+																																																																																																					<div class="col-md-3">
+																																																																																																									<div class="card">
+																																																																																																									<div class="card-body">
+																																																																																																									<img alt="" src="/img/product_img/oneplus_mobile.jpg" width="100%"
+																																																																																																									height="150px">
+																																																																																																									<p class="fs-5 text-center">OnePlus mobile</p>
+																																																																																																									<div class="row text-center">
+																																																																																																									<p class="fs-6 fw-bold">
+																																																																																																									&#8377; 20000 <span class="fs-6 text-success">20% off
+																																																																																																									</span>
+																																																																																																									</p>
+																																																																																																									<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																																																																									</div>
+																																																																																																									</div>
+																																																																																																									</div>
+																																																																																																									</div>  
+																																																																																																									<!--another-->	    
+																																																																																																												<div class="col-md-3">
+																																																																																																																<div class="card">
+																																																																																																																<div class="card-body">
+																																																																																																																<img alt="" src="/img/product_img/printed_short.jpg" width="100%"
+																																																																																																																height="150px">
+																																																																																																																<p class="fs-5 text-center">Printed Shirt</p>
+																																																																																																																<div class="row text-center">
+																																																																																																																<p class="fs-6 fw-bold">
+																																																																																																																&#8377; 2000 <span class="fs-6 text-success">20% off
+																																																																																																																</span>
+																																																																																																																</p>
+																																																																																																																<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																																																																																</div>
+																																																																																																																</div>
+																																																																																																																</div>
+																																																																																																																</div>  
+																																																																																																																<!--another-->	    
+																																																																																																																			<div class="col-md-3">
+																																																																																																																							<div class="card">
+																																																																																																																							<div class="card-body">
+																																																																																																																							<img alt="" src="/img/product_img/washing_machine.png" width="100%"
+																																																																																																																							height="150px">
+																																																																																																																							<p class="fs-5 text-center">Washing Machine</p>
+																																																																																																																							<div class="row text-center">
+																																																																																																																							<p class="fs-6 fw-bold">
+																																																																																																																							&#8377; 15000<span class="fs-6 text-success">20% off
+																																																																																																																							</span>
+																																																																																																																							</p>
+																																																																																																																							<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+
+																																																																																																																							</div>
+																																																																																																																							</div>
+																																																																																																																							</div>
+																																																																																																																							</div>  
+																																																																																																																							<!--another-->	    
+																																																																																																																										<div class="col-md-3">
+																																																																																																																														<div class="card">
+																																																																																																																														<div class="card-body">
+																																																																																																																														<img alt="" src="/img/product_img/white_shoe.jpg" width="100%"
+																																																																																																																														height="150px">
+																																																																																																																														<p class="fs-5 text-center">White Shoe</p>
+																																																																																																																														<div class="row text-center">
+																																																																																																																														<p class="fs-6 fw-bold">
+																																																																																																																														&#8377; 1500 <span class="fs-6 text-success">20% off
+																																																																																																																														</span>
+																																																																																																																														</p>
+																																																																																																																												<a href= "/product" class="btn btn-primary col-md-6 offset-md-3">View Details</a>
+																																																																																																																												
+
+																																																																																																																														</div>
+																																																																																																																														</div>
+																																																																																																																														</div>
+																																																																																																																														</div>  
+																																																																																																																														
+																																																																																																																
+																																																																																																									
+																																																																																																		
+																																																																													
+																																																															
+																																																	
+			  
+	     </div>
+	  </div>
+      </div>
+	  </div>
+	  
+	  </div>
+	  </div>
+
+					
+
+	</section>
+</body>
+</html>
