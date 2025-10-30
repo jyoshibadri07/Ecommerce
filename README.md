@@ -17,7 +17,7 @@ This is a **Spring Boot** based e-commerce project that implements a shopping ca
 ## Technologies Used
 - **Backend:** Java, Spring Boot
 - **Database:** MySQL / H2 (depending on your setup)
-- **Frontend:** Thymeleaf / HTML / CSS
+- **Frontend:** HTML / CSS
 - **Build Tool:** Maven
 - **Version Control:** Git
 
